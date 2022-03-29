@@ -1,0 +1,169 @@
+/* properties reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* novento Homepage background appearance */
+/*  main text UI properties */
+body {
+  background-image: url("../images/background.png");
+  color: #023859;
+  font-family: sans-serif; /* Nexa Bold */
+}
+
+a {
+  color: inherit;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+/* novento icon */
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+/* main navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 545px;
+  height: 119px;
+  background-image: url("../images/nav.png");
+}
+
+.main-nav {
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.main-nav__item a:link {
+  margin: 14px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main-nav__item:last-child {
+  color: #f29f05;
+  background-color: #023859;
+  border-radius: 20px;
+}
+
+.main-nav__item a:hover {
+  font-size: 25px;
+}
+
+/* search field */
+h1 {
+  color: #fff;
+  font-size: 54px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 700;
+  height: 99px;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  border-radius: 20px;
+  width: 790px;
+  height: 49px;
+  background-color: #fff;
+  color: white;
+}
+
+.results-images {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+/* best-lofts discover section */
+h2.lofts {
+  font-size: 54px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-top: 92px;
+  height: 99px;
+}
+
+.lofts-images {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* help-support section */
+h2.help {
+  font-size: 87px;
+  line-height: 90px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.help-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 62px;
+}
+
+/* footer */
+.footer-nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 100px auto;
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  color: #023859;
+}
+
+.footer-nav,
+.novento-nav {
+  list-style: none;
+}
+
+.footer-nav__item p {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.footer-nav__item a:link,
+.novento-nav__item a:link {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.novento-nav-container {
+  display: flex;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.novento-nav__item {
+  display: inline-block;
+}
