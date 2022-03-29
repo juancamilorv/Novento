@@ -1,4 +1,4 @@
-# novento
+# Novento
 Frontend project about real estate
 
 ## Designed by
