@@ -8,6 +8,10 @@
 /* novento Homepage background appearance */
 /*  main text UI properties */
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
   background-image: url("../images/background.png");
   color: #023859;
   font-family: sans-serif; /* Nexa Bold */
@@ -19,14 +23,12 @@ a {
 
 /* header */
 header {
+  height: 6.14%;
   display: flex;
   justify-content: space-between;
 }
 /* novento icon */
 .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 200px;
   height: 200px;
 }
@@ -69,23 +71,50 @@ nav {
   font-size: 25px;
 }
 
-/* search field */
+/* main */
+main {
+  height: 77.45%;
+}
+
+/* .results {
+  height: ;
+} */
+
+h1 + div {
+  width: 83.33%;
+  height: 4.42%;
+  background-color: #f29f05;
+  border-radius: 3em;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   color: #fff;
-  font-size: 54px;
+  font-size: 45px;
   line-height: 40px;
   text-align: center;
   font-weight: 700;
   height: 99px;
   margin-top: 40px;
+  margin-bottom: 64px;
 }
 
-input[type="text"] {
+input {
+  /* display: inline-block; */
   border-radius: 20px;
   width: 790px;
   height: 49px;
-  background-color: #fff;
-  color: white;
+  background-image: url("../images/search.png");
+  color: #000;
+  margin-left: 24px;
+  margin-bottom: 74px;
+  padding: 10px;
+  font-size: em;
 }
 
 .results-images {
@@ -96,7 +125,7 @@ input[type="text"] {
 }
 
 /* best-lofts discover section */
-h2.lofts {
+h2.lofts-title {
   font-size: 54px;
   line-height: 40px;
   font-weight: 700;
@@ -106,6 +135,8 @@ h2.lofts {
 
 .lofts-images {
   display: flex;
+  /* height: ;
+  width: ; */
   gap: 20px;
   justify-content: center;
 }
@@ -125,9 +156,13 @@ h2.help {
 }
 
 /* footer */
+footer {
+  height: 60.41%;
+}
+
 .footer-nav-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 80%;
   margin: 100px auto;
 }
@@ -166,4 +201,13 @@ hr {
 
 .novento-nav__item {
   display: inline-block;
+  margin-right: 20px;
+}
+
+.novento-nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+  /* margin: 100px auto; */
 }

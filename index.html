@@ -24,17 +24,24 @@
     </header>
 
     <main>
-      <section class="results-container">
+      <section class="results">
         <h1>Buscar tu hogar nunca había sido tan fácil</h1>
-        <div>
-          <form class="search" action="">
+        <div class="property-search">
+          <form
+            class="property-type"
+            id="property-search"
+            action=""
+            method="post"
+          >
+            <!-- <label for="type"></label> -->
             <select name="property-type" id="property__type">
               <option value="" disabled selected>Tipo de inmueble</option>
               <option value="apartment">Apartamento</option>
               <option value="studio-apartment">Apartaestudio</option>
               <option value="house">Casa</option>
-              <input type="text" name="" id="" />
             </select>
+            <!-- <label for="search"></label> -->
+            <input type="text" id="search" />
           </form>
         </div>
 
@@ -45,23 +52,22 @@
         </figure>
       </section>
 
-      <section class="lofts-container">
-        <h2 class="lofts">Descubre los mejores lofts</h2>
-        <div>
-          <figure class="lofts-images">
-            <img
-              src="./images/poblado-disponible.png"
-              alt="Disponible en el Poblado"
-            />
-            <img
-              src="./images/guatape-disponible.png"
-              alt="Disponible en Guatape"
-            />
-          </figure>
-        </div>
+      <section class="lofts">
+        <h2 class="lofts-title">Descubre los mejores lofts</h2>
+
+        <figure class="lofts-images">
+          <img
+            src="./images/poblado-disponible.png"
+            alt="Disponible en el Poblado"
+          />
+          <img
+            src="./images/guatape-disponible.png"
+            alt="Disponible en Guatape"
+          />
+        </figure>
       </section>
 
-      <section class="help-container">
+      <section class="help">
         <h2 class="help">¿Tienes dudas para vivir<br />en tu apartamento?</h2>
         <figure class="help-image">
           <img src="./images/help-contact.png" alt="pregunta" />
